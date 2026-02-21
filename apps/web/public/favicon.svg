@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <rect width="100" height="100" fill="#f7f7f4"/>
+  <text
+    font-family="'Courier New', Courier, monospace"
+    font-weight="700"
+    font-size="11"
+    fill="#111827"
+    xml:space="preserve"
+    x="4"
+    y="22"
+  >
+    <tspan x="4" dy="0">$$$$$$\$$$$\</tspan>
+    <tspan x="4" dy="13">$$  _$$  _$$\</tspan>
+    <tspan x="4" dy="13">$$ / $$ / $$ |</tspan>
+    <tspan x="4" dy="13">$$ | $$ | $$ |</tspan>
+    <tspan x="4" dy="13">$$ | $$ | $$ |</tspan>
+    <tspan x="4" dy="13">\__| \__| \__|</tspan>
+  </text>
+</svg>

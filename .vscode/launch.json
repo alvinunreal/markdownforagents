@@ -1,0 +1,24 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Debug API (bun)",
+            "runtimeExecutable": "bun",
+            "program": "${workspaceFolder}/apps/api/index.ts",
+            "cwd": "${workspaceFolder}/apps/api",
+            "console": "integratedTerminal"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Vitest: Current File",
+            "runtimeExecutable": "bun",
+            "program": "${workspaceFolder}/apps/api/node_modules/vitest/vitest.mjs",
+            "args": ["run", "${relativeFile}"],
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen"
+        }
+    ]
+}

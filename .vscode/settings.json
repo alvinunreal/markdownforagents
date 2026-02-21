@@ -1,0 +1,41 @@
+{
+    "files.exclude": {
+        "**/.git": true,
+        "**/.DS_Store": true,
+        "**/node_modules": true,
+        "**/node_modules/.cache": true,
+        "**/node_modules/.vite": true,
+        "**/node_modules/.wrangler": true,
+        "**/.turbo": true,
+        "**/dist": true,
+        "**/dist-ssr": true,
+        "**/.next": true,
+        "**/.nuxt": true,
+        "**/.cache": true,
+        "**/.parcel-cache": true,
+        "**/.wrangler": true,
+        "**/bun.lockb": true
+    },
+    "search.exclude": {
+        "**/node_modules": true,
+        "**/.turbo": true,
+        "**/dist": true,
+        "**/.cache": true,
+        "**/node_modules/.cache": true
+    },
+    "files.watcherExclude": {
+        "**/.git/objects/**": true,
+        "**/.git/subtree-cache/**": true,
+        "**/node_modules/**": true,
+        "**/node_modules/.cache/**": true,
+        "**/.turbo/**": true,
+        "**/dist/**": true
+    },
+    "typescript.tsdk": "node_modules/typescript/lib",
+    "typescript.enablePromptUseWorkspaceTsdk": true,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": "explicit"
+    }
+}

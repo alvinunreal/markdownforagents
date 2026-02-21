@@ -1,0 +1,24 @@
+name = "markdownforagents-api"
+main = "src/index.js"
+compatibility_date = "2025-01-01"
+compatibility_flags = ["nodejs_compat"]
+workers_dev = true
+preview_urls = true
+
+# Routes — intercept only the API paths on markdownforagents.com.
+# Cloudflare Pages handles everything else (/, /docs, etc.).
+# Requires markdownforagents.com to be an orange-clouded DNS record in your zone.
+[[routes]]
+pattern = "markdownforagents.com/r*"
+zone_name = "markdownforagents.com"
+
+[[routes]]
+pattern = "markdownforagents.com/map*"
+zone_name = "markdownforagents.com"
+
+[[routes]]
+pattern = "markdownforagents.com/health*"
+zone_name = "markdownforagents.com"
+
+[ai]
+binding = "AI"

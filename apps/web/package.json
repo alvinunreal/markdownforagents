@@ -1,0 +1,43 @@
+{
+  "name": "markdownforagents-web",
+  "private": true,
+  "version": "2.2.0",
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "preview": "nuxt preview",
+    "start": "node .output/server/index.mjs",
+    "deploy": "nuxt build && npx wrangler pages deploy dist --project-name markdownforagents-web --branch main",
+    "deploy:preview": "nuxt build && npx wrangler pages deploy dist --project-name markdownforagents-web --branch preview",
+    "postinstall": "nuxt prepare",
+    "prettier:check": "prettier --check .",
+    "prettier:fix": "prettier --write . --fix",
+    "logs": "npx wrangler pages deployment tail --project-name markdownforagents-web --environment production"
+  },
+  "devDependencies": {
+    "@iconify-json/noto": "^1.2.7",
+    "@nuxt/icon": "^2.1.1",
+    "@nuxt/image": "2.0.0",
+    "@nuxt/scripts": "0.13.2",
+    "@nuxthub/core": "0.10.4",
+    "@nuxtjs/device": "^4.0.0",
+    "@nuxtjs/fontaine": "^0.5.0",
+    "@nuxtjs/google-fonts": "^3.2.0",
+    "@tailwindcss/typography": "^0.5.19",
+    "@tailwindcss/vite": "^4.1.18",
+    "@unhead/vue": "^2.1.1",
+    "nuxt": "^4.2.2",
+    "prettier": "^3.7.4",
+    "prettier-plugin-tailwindcss": "^0.7.2",
+    "tailwindcss": "^4.1.18",
+    "wrangler": "^4.66.0"
+  },
+  "dependencies": {
+    "@formkit/auto-animate": "^0.9.0",
+    "@nuxtjs/color-mode": "^4.0.0",
+    "@nuxtjs/seo": "^3.3.0",
+    "gsap": "^3.14.2",
+    "isomorphic-dompurify": "^2.14.0"
+  }
+}

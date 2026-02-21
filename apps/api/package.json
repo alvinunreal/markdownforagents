@@ -1,0 +1,21 @@
+{
+    "name": "@markdownforagents/api",
+    "private": true,
+    "version": "0.0.1",
+    "scripts": {
+        "dev": "wrangler dev",
+        "build": "echo 'no build step needed'",
+        "test": "vitest run",
+        "deploy": "wrangler deploy"
+    },
+    "dependencies": {
+        "hono": "^4",
+        "node-html-parser": "^6",
+        "@markdownforagents/pagemap": "workspace:*"
+    },
+    "devDependencies": {
+        "wrangler": "^4",
+        "vitest": "^3",
+        "@cloudflare/vitest-pool-workers": "^0.8"
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "name": "markdownforagents",
+    "packageManager": "bun@1.3.9",
+    "private": true,
+    "workspaces": [
+        "apps/*",
+        "packages/*"
+    ],
+    "scripts": {
+        "build": "turbo build",
+        "test": "turbo test",
+        "dev": "turbo dev",
+        "deploy": "turbo deploy"
+    },
+    "devDependencies": {
+        "turbo": "^2"
+    }
+}

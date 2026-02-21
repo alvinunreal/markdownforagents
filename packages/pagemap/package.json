@@ -1,0 +1,15 @@
+{
+    "name": "@markdownforagents/pagemap",
+    "version": "0.0.1",
+    "main": "src/index.js",
+    "scripts": {
+        "build": "echo 'no build step needed'",
+        "test": "vitest run"
+    },
+    "dependencies": {
+        "node-html-parser": "^6"
+    },
+    "devDependencies": {
+        "vitest": "^3"
+    }
+}
