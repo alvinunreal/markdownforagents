@@ -263,6 +263,8 @@ const constraints = [
   { value: '2 MB',    label: 'Max response size' },
   { value: 'No auth', label: 'Required' },
 ];
+
+const githubUrl = 'https://github.com/alvinunreal/markdownforagents';
 </script>
 
 <template>
@@ -286,6 +288,22 @@ const constraints = [
 
     <!-- Content -->
     <main class="relative z-10 w-full flex flex-col items-center px-6 pt-16 pb-32">
+
+      <div class="w-full max-w-3xl flex justify-end -mt-8 mb-2">
+        <a
+          :href="githubUrl"
+          target="_blank"
+          rel="nofollow noopener noreferrer"
+          aria-label="View project on GitHub"
+          title="View on GitHub"
+          class="inline-flex items-center gap-2 rounded-full border border-gray-200/80 bg-white/70 px-3 py-2 text-[10px] font-bold uppercase tracking-[0.12em] text-gray-600 transition-all hover:-translate-y-0.5 hover:border-gray-300 hover:bg-white hover:text-gray-900"
+        >
+          <svg viewBox="0 0 24 24" class="h-4 w-4" aria-hidden="true" fill="currentColor">
+            <path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.3-1.8-1.3-1.8-1.1-.8.1-.8.1-.8 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.9 1.3 3.6 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.6-1.4-5.6-6.1 0-1.3.5-2.3 1.2-3.2-.1-.3-.5-1.6.1-3.2 0 0 1-.3 3.3 1.2a11.2 11.2 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.9.1 3.2.8.9 1.2 2 1.2 3.2 0 4.7-2.9 5.7-5.7 6 .5.4.8 1.1.8 2.3v3.4c0 .3.2.7.8.6A12 12 0 0 0 12 .3" />
+          </svg>
+          <span>GitHub</span>
+        </a>
+      </div>
 
       <!-- ── Hero ── -->
       <header class="max-w-3xl w-full text-center">
